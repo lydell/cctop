@@ -1,0 +1,70 @@
+{
+  "commands": [
+    {
+      "name": "map",
+      "value": "e follow_link",
+      "lines": [[2, 5, 13]],
+      "line": 2,
+      "column": 1,
+      "endLine": 2,
+      "subCommands": []
+    },
+    {
+      "name": "map",
+      "value": "c move_tab_right",
+      "lines": [[3, 5, 16]],
+      "line": 3,
+      "column": 1,
+      "endLine": 7,
+      "subCommands": [
+        {
+          "name": "map",
+          "value": "r indented_by_mistake\naccidental leftover continuation",
+          "lines": [[5, 6, 21], [7, 3, 32]],
+          "line": 5,
+          "column": 2,
+          "endLine": 7,
+          "subCommands": []
+        }
+      ]
+    },
+    {
+      "name": "at",
+      "value": "example.com\n foo.org\n ^.tt?ps?://.*\\.html?",
+      "lines": [[10, 4, 11], [11, 3, 8], [13, 3, 21]],
+      "line": 10,
+      "column": 1,
+      "endLine": 18,
+      "subCommands": [
+        {
+          "name": "unmap",
+          "value": "e",
+          "lines": [[15, 9, 1]],
+          "line": 15,
+          "column": 3,
+          "endLine": 15,
+          "subCommands": []
+        },
+        {
+          "name": "command",
+          "value": "test\nwindow.location = \"test\";",
+          "lines": [[16, 11, 4], [17, 7, 25]],
+          "line": 16,
+          "column": 3,
+          "endLine": 17,
+          "subCommands": []
+        },
+        {
+          "name": "map",
+          "value": "<c-f5> test",
+          "lines": [[18, 7, 11]],
+          "line": 18,
+          "column": 3,
+          "endLine": 18,
+          "subCommands": []
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

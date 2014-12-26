@@ -1,0 +1,5 @@
+command          value     foo        |
+
+command     a      b      |
+\                        a          |
+\b   |

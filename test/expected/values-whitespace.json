@@ -1,0 +1,23 @@
+{
+  "commands": [
+    {
+      "name": "command",
+      "value": "value     foo        ",
+      "lines": [[1, 18, 21]],
+      "line": 1,
+      "column": 1,
+      "endLine": 1,
+      "subCommands": []
+    },
+    {
+      "name": "command",
+      "value": "a      b      \n                       a          \nb   ",
+      "lines": [[3, 13, 14], [4, 3, 34], [5, 2, 4]],
+      "line": 3,
+      "column": 1,
+      "endLine": 5,
+      "subCommands": []
+    }
+  ],
+  "errors": []
+}

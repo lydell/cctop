@@ -1,0 +1,57 @@
+{
+  "commands": [
+    {
+      "name": "left-bracket",
+      "value": "\n   /\n  /\n /\n \\\n  \\\n   \\",
+      "lines": [
+        [1, 13, 0],
+        [2, 3, 4],
+        [3, 3, 3],
+        [4, 3, 2],
+        [5, 3, 2],
+        [6, 3, 3],
+        [7, 3, 4]
+      ],
+      "line": 1,
+      "column": 1,
+      "endLine": 7,
+      "subCommands": []
+    },
+    {
+      "name": "Makefile",
+      "value": "\n# Note how Makefiles mandate a tab character at the start of recipe lines!\nedit : main.o kbd.o command.o display.o \\\n       insert.o search.o files.o utils.o\n\tcc -o edit main.o kbd.o command.o display.o \\\n\t      insert.o search.o files.o utils.o\n\nmain.o : main.c defs.h\n\tcc -c main.c",
+      "lines": [
+        [9, 9, 0],
+        [10, 5, 74],
+        [11, 5, 41],
+        [12, 5, 40],
+        [13, 5, 46],
+        [14, 5, 40],
+        [15, 4, 0],
+        [16, 5, 22],
+        [17, 5, 13]
+      ],
+      "line": 9,
+      "column": 1,
+      "endLine": 17,
+      "subCommands": []
+    },
+    {
+      "name": "markdown",
+      "value": "\n\n    code block\n    at the beginning\n\nand then a paragraph",
+      "lines": [
+        [19, 9, 0],
+        [20, 2, 0],
+        [21, 3, 14],
+        [22, 3, 20],
+        [23, 2, 0],
+        [24, 3, 20]
+      ],
+      "line": 19,
+      "column": 1,
+      "endLine": 24,
+      "subCommands": []
+    }
+  ],
+  "errors": []
+}

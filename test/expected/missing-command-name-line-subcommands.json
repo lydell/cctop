@@ -1,0 +1,29 @@
+{
+  "commands": [],
+  "errors": [
+    {
+      "id": "missing-command-name-line",
+      "line": 1,
+      "column": 1,
+      "command": {
+        "name": null,
+        "value": "",
+        "lines": [[null, null, 0]],
+        "line": null,
+        "column": null,
+        "endLine": 1,
+        "subCommands": [
+          {
+            "name": "sub",
+            "value": "",
+            "lines": [[1, 6, 0]],
+            "line": 1,
+            "column": 3,
+            "endLine": 1,
+            "subCommands": []
+          }
+        ]
+      }
+    }
+  ]
+}

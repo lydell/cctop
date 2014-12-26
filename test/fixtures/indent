@@ -1,0 +1,30 @@
+#comment
+ #comment
+    # comment
+   # comment
+  # comment
+
+  |
+           |
+	|
+
+command      a        |
+\b
+\ b
+\  b
+\   b
+\	b
+ \c
+       \   c         |
+       #comment
+       \d
+#comment
+  \d
+  sub1
+    sub2
+      sub3
+        sub4
+    sub2
+        sub3
+    sub2
+    sub2

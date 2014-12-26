@@ -1,0 +1,28 @@
+{
+  "name": "cctop",
+  "version": "0.1.0",
+  "author": "Simon Lydell",
+  "license": "MIT",
+  "description": "Plain text configuration parser.",
+  "repository": "lydell/cctop",
+  "keywords": [
+    "plain",
+    "text",
+    "conf",
+    "config",
+    "configuration",
+    "syntax"
+  ],
+  "scripts": {
+    "lint": "jshint index.js lib/*.js test/*.js",
+    "unit": "mocha --ui tdd",
+    "test": "npm run lint && npm run unit",
+    "generate-expected": "node test/parse"
+  },
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "jshint": "^2.4.4",
+    "json-stringify-pretty-compact": "^1.0.1",
+    "mocha": "^1.21.4"
+  }
+}

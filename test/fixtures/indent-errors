@@ -1,0 +1,27 @@
+group 1
+	indented with one tab
+ 	indented with one space and one tab (error)
+        \ continuation
+\ more
+   	|
+   \ even more
+   	\ two spaces and a tab
+
+	 indented with one tab and one space (error)
+	   subcommands error out too
+	   second subcommand
+        indented with eight spaces (error)
+          \ continuation
+          subcommand
+	indented with one tab
+
+group 2
+        indented with eight spaces
+	indented with one tab (error)
+        indented with eight spaces
+          subcommand less indented but ok
+            sub
+         ambigous indent (error)
+           ambigous indent (error)
+             sub-sub
+            sub

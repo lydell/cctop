@@ -1,0 +1,24 @@
+left-bracket
+\    /
+\   /
+\  /
+\  \
+\   \
+\    \
+
+Makefile
+  \ # Note how Makefiles mandate a tab character at the start of recipe lines!
+  \ edit : main.o kbd.o command.o display.o \
+  \        insert.o search.o files.o utils.o
+  \ 	cc -o edit main.o kbd.o command.o display.o \
+  \ 	      insert.o search.o files.o utils.o
+  \
+  \ main.o : main.c defs.h
+  \ 	cc -c main.c
+
+markdown
+\
+\     code block
+\     at the beginning
+\
+\ and then a paragraph

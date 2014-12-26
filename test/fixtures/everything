@@ -1,0 +1,18 @@
+# Custom hotkeys.
+map e follow_link
+map c move_tab_right
+
+	map r indented_by_mistake
+
+\ accidental leftover continuation
+
+# Site-specific rules.
+at example.com
+\  foo.org
+# Match using regex:
+\  ^.tt?ps?://.*\.html?
+
+  unmap e
+  command test
+    \ window.location = "test";
+  map <c-f5> test

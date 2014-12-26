@@ -1,0 +1,100 @@
+{
+  "commands": [
+    {
+      "name": "group",
+      "value": "1",
+      "lines": [[1, 7, 1]],
+      "line": 1,
+      "column": 1,
+      "endLine": 16,
+      "subCommands": [
+        {
+          "name": "indented",
+          "value": "with one tab",
+          "lines": [[2, 11, 12]],
+          "line": 2,
+          "column": 2,
+          "endLine": 2,
+          "subCommands": []
+        },
+        {
+          "name": "indented",
+          "value": "with one tab",
+          "lines": [[16, 11, 12]],
+          "line": 16,
+          "column": 2,
+          "endLine": 16,
+          "subCommands": []
+        }
+      ]
+    },
+    {
+      "name": "group",
+      "value": "2",
+      "lines": [[18, 7, 1]],
+      "line": 18,
+      "column": 1,
+      "endLine": 27,
+      "subCommands": [
+        {
+          "name": "indented",
+          "value": "with eight spaces",
+          "lines": [[19, 18, 17]],
+          "line": 19,
+          "column": 9,
+          "endLine": 19,
+          "subCommands": []
+        },
+        {
+          "name": "indented",
+          "value": "with eight spaces",
+          "lines": [[21, 18, 17]],
+          "line": 21,
+          "column": 9,
+          "endLine": 27,
+          "subCommands": [
+            {
+              "name": "subcommand",
+              "value": "less indented but ok",
+              "lines": [[22, 22, 20]],
+              "line": 22,
+              "column": 11,
+              "endLine": 27,
+              "subCommands": [
+                {
+                  "name": "sub",
+                  "value": "",
+                  "lines": [[23, 16, 0]],
+                  "line": 23,
+                  "column": 13,
+                  "endLine": 23,
+                  "subCommands": []
+                },
+                {
+                  "name": "sub",
+                  "value": "",
+                  "lines": [[27, 16, 0]],
+                  "line": 27,
+                  "column": 13,
+                  "endLine": 27,
+                  "subCommands": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {"id": "indent-mixed-space-tab-line", "line": 3, "column": 1},
+    {"id": "indent-mixed-space-tab-line", "line": 10, "column": 1},
+    {"id": "indent-mixed-space-tab-line", "line": 11, "column": 1},
+    {"id": "indent-mixed-space-tab-line", "line": 12, "column": 1},
+    {"id": "indent-mixed-space-tab-block", "line": 13, "column": 1},
+    {"id": "indent-mixed-space-tab-block", "line": 15, "column": 1},
+    {"id": "indent-mixed-space-tab-block", "line": 20, "column": 1},
+    {"id": "indent-ambigous-length", "line": 24, "column": 1},
+    {"id": "indent-ambigous-length", "line": 25, "column": 1}
+  ]
+}
